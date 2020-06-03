@@ -1,0 +1,380 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={CoronaNet Frequently Asked Questions},
+  pdfauthor={CoronaNet Project},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{CoronaNet Frequently Asked Questions}
+\author{CoronaNet Project}
+\date{2020-06-03}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+This website contains a collection of questions that have been previously asked on the CoronaNet Slack channel. Please refer to our \href{https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit}{codebook} for more general information about policy categories and coding.
+
+\hypertarget{frequently-asked-questions}{%
+\chapter{Frequently Asked Questions}\label{frequently-asked-questions}}
+
+We have compiled keywords for common types of questions we have received on the \#ra-chat channel. You can also use the search bar at the top of the page.
+
+\hypertarget{reminders}{%
+\section{Reminders}\label{reminders}}
+
+\hypertarget{flights-chartering-airports-airplanes-travel-visa-abroad-trip}{%
+\section{Flights, chartering, airports, airplanes, travel, visa, abroad, trip}\label{flights-chartering-airports-airplanes-travel-visa-abroad-trip}}
+
+\textbf{How to code that a government implements health screenings for passengers entering a country?}\\
+Policy type: ``External Border Restrictions''\\
+Sub-category in the follow up question (type\_ext\_restrict): ``Health screenings''\\
+The distinction between health screenings at airports, and the ``Health Testing'' category not done at the border, is that the goal of the health screening at the border is to restrict entry, whereas the goal of `Health Testing' is to ascertain the underlying infection rate.
+
+\textbf{How to code the cancellation of visa appointment (from all or a particular country)?}\\
+Policy type: ``External Border Restriction''\\
+Check ``visa'' in the ``travel mechanism'' question.
+
+\textbf{How to code the cancellation of school trips both abroad and in the country?}\\
+Please make two entries:\\
+1. Policy type: ``External Border Restriction''\\
+2. Policy type: ``Internal Border Restriction''
+
+\textbf{How to code the government banning employment agencies from sending any workers abroad?}\\
+Policy type: ``External Border Restrictions''\\
+Target direction: ``Outbound''
+
+\hypertarget{public-transport}{%
+\section{Public transport}\label{public-transport}}
+
+\textbf{How to code the restriction of public transport (people being discouraged to use it)?}\\
+Policy type: ``Internal Border Restrictions''
+
+\textbf{How to code changes to University schedules - lectures are moved 30 minutes later to avoid overcrowding on public transport?}\\
+Policy type: ``Other''
+
+\textbf{How to code a policy in which people are asked to wear masks outside?}\\
+Policy type: ``Social Distancing''
+Sub-category: ``Wearing of face masks''
+
+\hypertarget{technology-robots}{%
+\section{Technology, robots}\label{technology-robots}}
+
+\textbf{How to code the country using robots to enforce the quarantine?}\\
+Policy type: ``Curfew''. If they are using it to detect COVID-19, then it should also be under ``Health monitoring''.
+
+\hypertarget{prison-arrest-arrested}{%
+\section{Prison, arrest, arrested}\label{prison-arrest-arrested}}
+
+\textbf{At the beginning of the outbreak in Wuhan, there were some government actions/policies that are unofficial, never announced but later verified by journalists, should we include these materials? Also, what about incidents when whistleblower doctors were arrested and the govt asked the public not to spread rumors?}\\
+Cite someone talking about them after the fact. As far as whistleblowers/fake news, feel free to use ``other policy type'' if it doesn't fit into any of our categories.
+
+\hypertarget{fake-news-online-misinformation}{%
+\section{Fake news, online misinformation}\label{fake-news-online-misinformation}}
+
+\textbf{How to code a policy that involves taking legal action against those spreading false information about COVID?}\\
+Policy type: ``Public Awareness Campaign'' but please note in the ``Notes'' section that it's about legal action against spreading false information about COVID.
+
+\textbf{Turkmenistan banned the mention of ``coronavirus'' which has entailed a number of different policies: removing direct mentions of it from public health resources, media has been ordered not to use it; the police can arrest or fine people who wear face masks or say the word, etc.}\\
+Banning the use of face masks and would fall under ``Other'' {[}note, previous guidance said `Health Resources', apologies{]} and the enforcement would definitely be `police' and `national level government' but please make a note at the end of the survey about the ban.\\
+The media's ban on using the word coronavirus would fall under ``Public Awareness Campaign'' and again enforcement would include `police' and `national level government' but please make a note at the end of the survey about the ban.
+
+\textbf{How to code the tackling fake news with government updates on online misinformation?}\\
+Policy type: ``Public Awareness Campaign''
+
+\textbf{At the beginning of the outbreak in Wuhan, there were some government actions/policies that are unofficial, never announced but later verified by journalists, should we include these materials? Also, what about incidents when whistleblower doctors were arrested and the govt asked the public not to spread rumors?}\\
+Cite someone talking about them after the fact. As far as whistleblowers/fake news, feel free to use ``other policy type'' if it doesn't fit into any of our categories.
+
+\hypertarget{journalist-newspaper-whistleblower}{%
+\section{Journalist, newspaper, whistleblower}\label{journalist-newspaper-whistleblower}}
+
+\textbf{At the beginning of the outbreak in Wuhan, there were some government actions/policies that are unofficial, never announced but later verified by journalists, should we include these materials? Also, what about incidents when whistleblower doctors were arrested and the govt asked the public not to spread rumors?}\\
+Cite someone talking about them after the fact. As far as whistleblowers/fake news, feel free to use ``other policy type'' if it doesn't fit into any of our categories.
+
+\hypertarget{law-legal}{%
+\section{Law, legal}\label{law-legal}}
+
+\textbf{How to code a policy that involves taking legal action against those spreading false information about COVID?}\\
+Policy type: ``Public Awareness Campaign'' but please note in the ``Notes'' section that it's about legal action against spreading false information about COVID.
+
+\hypertarget{government-funding-ministry}{%
+\section{Government funding, ministry}\label{government-funding-ministry}}
+
+\textbf{How to code the government banning employment agencies from sending any workers abroad?}\\
+Policy type: ``External Border Restrictions''\\
+Target direction: ``Outbound''
+
+\textbf{How to code government funding for vaccine development?}\\
+Policy type: ``Health Resources''
+Sub-type: ``Health Research Facilities''; if there is a dollar amount given, please enter it into the text entry
+
+\textbf{At the beginning of the outbreak in Wuhan, there were some government actions/policies that are unofficial, never announced but later verified by journalists, should we include these materials? Also, what about incidents when whistleblower doctors were arrested and the govt asked the public not to spread rumors?}\\
+Cite someone talking about them after the fact. As far as whistleblowers/fake news, feel free to use ``other policy type'' if it doesn't fit into any of our categories.
+
+\textbf{How to code the evacuation of elderly people in government-driven homes?}\\
+We don't have a particular policy category that would capture this yet. Please choose ``Other Policy Not Listed Above'' and provide a brief description.
+
+\hypertarget{research-medication-vaccines-blood-donation}{%
+\section{Research, medication, vaccines, blood donation}\label{research-medication-vaccines-blood-donation}}
+
+\textbf{How to code government funding for vaccine development?}\\
+Policy type: ``Health Resources''
+Sub-type: ``Health Research Facilities''; if there is a dollar amount given, please enter it into the text entry
+
+\textbf{How to code encouraging eligible donors to continue to give blood?}\\
+Policy type: ``Health Resources''
+
+\hypertarget{homeless-elderly-vulnerable-people}{%
+\section{Homeless, elderly, vulnerable people}\label{homeless-elderly-vulnerable-people}}
+
+\textbf{How to code the isolation for all citizens older than a particular age?}\\
+Policy type: ``Quarantine''
+Type of quarantine (follow-up question): ``Quarantine only applies to people of certain ages''. Add the ages (give approximation if necessary) in the text entry.
+
+\textbf{Policy description: ``Morocco established 90 housing centres for 3000 homeless individuals, where they will spend 14 days in preventive isolation and symptoms will be monitored closely.''}\\
+Policy type: ``Quarantine''
+
+\textbf{How to code the evacuation of elderly people in government-driven homes?}\\
+We don't have a particular policy category that would capture this yet. Please choose ``Other Policy Not Listed Above'' and provide a brief description.
+
+\hypertarget{illness-symptoms-isolation-health-testing-health-checks-monitoring}{%
+\section{Illness, symptoms, isolation, health testing, health checks, monitoring}\label{illness-symptoms-isolation-health-testing-health-checks-monitoring}}
+
+\textbf{How to code the isolation for all citizens older than a particular age?}\\
+Policy type: ``Quarantine''
+Type of quarantine (follow-up question): ``Quarantine only applies to people of certain ages''. Add the ages (give approximation if necessary) in the text entry.
+
+\textbf{Policy description: ``Morocco established 90 housing centres for 3000 homeless individuals, where they will spend 14 days in preventive isolation and symptoms will be monitored closely.''}\\
+Policy type: ``Quarantine''
+
+\textbf{How to code that a government implements health screenings for passengers entering a country?}\\
+Policy type: ``External Border Restrictions''\\
+Sub-category in the follow up question (type\_ext\_restrict): ``Health screenings''\\
+The distinction between health screenings at airports, and the ``Health Testing'' category not done at the border, is that the goal of the health screening at the border is to restrict entry, whereas the goal of `Health Testing' is to ascertain the underlying infection rate.
+
+\textbf{How to code health screening at all hospital points of entry?}\\
+Policy type: ``Health Monitoring''
+
+\textbf{Health officials are actively monitoring contacts of infected patients, which means a public health worker will call each person daily to check for symptoms like fever or respiratory issues. Should one of these close contacts develop symptoms, they will be instructed to immediately contact the public health worker, who will help arrange a medical evaluation.}\\
+Policy type: ``Health Monitoring''
+
+\hypertarget{cooperation-foreign-aid-financial-aid}{%
+\section{Cooperation, foreign aid, financial aid}\label{cooperation-foreign-aid-financial-aid}}
+
+\textbf{Are you interested in policies offering humanitarian aid from one country to another?}\\
+Yes - ``Other policy type''
+
+\hypertarget{mail-export-import-trade-economy}{%
+\section{Mail, export, import, trade, economy}\label{mail-export-import-trade-economy}}
+
+\textbf{How to code policies relating to import bans and quarantines (i.e.~if products coming from China are banned, restricted, quarantined, etc.)?}\\
+Policy type: ``Other policy type''
+
+\hypertarget{autonomous-regions-provinces-states-islands}{%
+\section{Autonomous regions, provinces, states, islands}\label{autonomous-regions-provinces-states-islands}}
+
+\hypertarget{translations-languages}{%
+\section{Translations, languages}\label{translations-languages}}
+
+\hypertarget{hotline-task-force}{%
+\section{Hotline, task force}\label{hotline-task-force}}
+
+\hypertarget{health-care-health-personnel-doctors-nurses-resources-masks}{%
+\section{Health care, health personnel, doctors, nurses, resources, masks}\label{health-care-health-personnel-doctors-nurses-resources-masks}}
+
+\textbf{How to code a policy encouraging ministry of health personnel to remain at home if they are sick?}\\
+Policy type: ``Quarantine''\\
+Compliance: ``Recommended/Voluntary''
+
+\textbf{Turkmenistan banned the mention of ``coronavirus'' which has entailed a number of different policies: removing direct mentions of it from public health resources, media has been ordered not to use it; the police can arrest or fine people who wear face masks or say the word, etc.}\\
+Banning the use of face masks and would fall under ``Other'' {[}note, previous guidance said `Health Resources', apologies{]} and the enforcement would definitely be `police' and `national level government' but please make a note at the end of the survey about the ban.\\
+The media's ban on using the word coronavirus would fall under ``Public Awareness Campaign'' and again enforcement would include `police' and `national level government' but please make a note at the end of the survey about the ban.
+
+\textbf{Inslee announced new restrictions today on non-urgent medical and dental procedures so the state can make sure Washington health care workers have enough protective equipment to wear as they work the front lines of the COVID-19 pandemic. Today's order applies to any non-urgent procedure that requires medical professionals to wear personal protective equipment.}\\
+Policy type: ``Health Resources''
+Sub-category: ``Unspecified health staff''
+
+\textbf{How to code encouraging eligible donors to continue to give blood?}\\
+Policy type: ``Health Resources''
+
+\textbf{Health officials are actively monitoring contacts of infected patients, which means a public health worker will call each person daily to check for symptoms like fever or respiratory issues. Should one of these close contacts develop symptoms, they will be instructed to immediately contact the public health worker, who will help arrange a medical evaluation.}\\
+Policy type: ``Health Monitoring''
+
+\textbf{At the beginning of the outbreak in Wuhan, there were some government actions/policies that are unofficial, never announced but later verified by journalists, should we include these materials? Also, what about incidents when whistleblower doctors were arrested and the govt asked the public not to spread rumors?}\\
+Cite someone talking about them after the fact. As far as whistleblowers/fake news, feel free to use ``other policy type'' if it doesn't fit into any of our categories.
+
+\hypertarget{nursing-homes-hospitals-visits}{%
+\section{Nursing homes, hospitals, visits}\label{nursing-homes-hospitals-visits}}
+
+\textbf{How to code the ban on visiting hours for nursing homes and hospitals?}\\
+Policy type: "QuarantineW (the unfortunate logic being that people in nursing homes and hospitals generally can't leave)
+
+\textbf{How to code health screening at all hospital points of entry?}\\
+Policy type: ``Health Monitoring''
+
+\textbf{How to code the closure of ``outpatient services'' (non-urgent hospital care) in public hospitals?}\\
+Policy type: ``Health Resources''
+Sub-category: ``Health Infrastructure'', noting in the text entry that this is about outpatient services in public hospitals.
+
+\textbf{Inslee announced new restrictions today on non-urgent medical and dental procedures so the state can make sure Washington health care workers have enough protective equipment to wear as they work the front lines of the COVID-19 pandemic. Today's order applies to any non-urgent procedure that requires medical professionals to wear personal protective equipment.}\\
+Policy type: ``Health Resources''
+Sub-category: ``Unspecified health staff''
+
+\textbf{How to code the evacuation of elderly people in government-driven homes?}\\
+We don't have a particular policy category that would capture this yet. Please choose ``Other Policy Not Listed Above'' and provide a brief description.
+
+\hypertarget{compensation-salary-employee-employer-work-worker-home-office}{%
+\section{Compensation, salary, employee, employer, work, worker, home-office}\label{compensation-salary-employee-employer-work-worker-home-office}}
+
+\textbf{How to code the government banning employment agencies from sending any workers abroad?}\\
+Policy type: ``External Border Restrictions''\\
+Target direction: ``Outbound''
+
+\textbf{How to code work from home policies?}\\
+Policy type: ``Restriction of Non-Essential Businesses''
+
+\textbf{How to code asking employers to provide hand-washing facilities in the workplace (obligatory measure)?}\\
+Policy type: ``Health Resources''
+Sub-category: ``Other Health Infrastructure'', and then describe the policy in the text entry.
+
+\textbf{Health officials are actively monitoring contacts of infected patients, which means a public health worker will call each person daily to check for symptoms like fever or respiratory issues. Should one of these close contacts develop symptoms, they will be instructed to immediately contact the public health worker, who will help arrange a medical evaluation.}\\
+Policy type: ``Health Monitoring''
+
+\textbf{How to code telling half of employees to work from home?}\\
+Two entries:
+1. Policy type: ``Restrictions of non-essential government services''
+2. Policy type: ``Restrictions of non-essential business''
+
+\hypertarget{culture-events-theatre-cinema}{%
+\section{Culture, events, theatre, cinema}\label{culture-events-theatre-cinema}}
+
+\textbf{How to code the postponement of cultural events and activities in theatres, etc?}\\
+Policy type: ``Restriction of Mass Gatherings''
+
+\hypertarget{religion-church-mosque-holidays}{%
+\section{Religion, church, mosque, holidays}\label{religion-church-mosque-holidays}}
+
+\textbf{How to code that the restriction on mass gatherings only target at a certain type of gatherings (e.g.~in Tajikistan citizens were asked to avoid going to mosques for Friday prayers, and the restriction does not apply to any other public gatherings simultaneously)?}\\
+Policy type: ``Restriction of Mass Gatherings''. Add a note at the end of the survey that the restriction targeted only a certain type (in Tajikistan case - only targeted mosques).
+
+\textbf{How to code the declaration of a nation-wide public holiday?}\\
+Policy type: ``Other''
+
+\hypertarget{education-school-university}{%
+\section{Education, school, university}\label{education-school-university}}
+
+\textbf{How to code the cancellation of school trips both abroad and in the country?}\\
+Please make two entries:\\
+1. Policy type: ``External Border Restriction''\\
+2. Policy type: ``Internal Border Restriction''
+
+\textbf{Would the closure of driving schools fall under closure of schools or restriction of non-essential businesses as these are often privately owned?}\\
+Policy type: ``Restriction of non-essential businesses''
+
+\textbf{How to code changes to University schedules - lectures are moved 30 minutes later to avoid overcrowding on public transport?}\\
+Policy type: ``Other''
+
+\hypertarget{hygiene-hand-washing-sanitation}{%
+\section{Hygiene, hand-Washing, sanitation}\label{hygiene-hand-washing-sanitation}}
+
+\textbf{How to code asking employers to provide hand-washing facilities in the workplace (obligatory measure)?}\\
+Policy type: ``Health Resources''
+Sub-category: ``Other Health Infrastructure'', and then describe the policy in the text entry.
+
+\hypertarget{contacts-friends-family}{%
+\section{Contacts, friends, family}\label{contacts-friends-family}}
+
+\textbf{Health officials are actively monitoring contacts of infected patients, which means a public health worker will call each person daily to check for symptoms like fever or respiratory issues. Should one of these close contacts develop symptoms, they will be instructed to immediately contact the public health worker, who will help arrange a medical evaluation.}\\
+Policy type: ``Health Monitoring''
+
+\hypertarget{evacuation-quarantine-lockdown-bans}{%
+\section{Evacuation, quarantine, lockdown, bans}\label{evacuation-quarantine-lockdown-bans}}
+
+\textbf{How to code the evacuation of elderly people in government-driven homes?}\\
+We don't have a particular policy category that would capture this yet. Please choose ``Other Policy Not Listed Above'' and provide a brief description.
+
+\textbf{How to code policies relating to import bans and quarantines (i.e.~if products coming from China are banned, restricted, quarantined, etc.)?}\\
+Policy type: ``Other policy type''
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

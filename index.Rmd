@@ -1,0 +1,24 @@
+--- 
+title: "CoronaNet Frequently Asked Questions"
+author: "CoronaNet Project"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: aapetrova/coronanet-faq
+description: "This page contains frequently asked questions about the data collection process in the CoronaNet project."
+---
+
+# Introduction
+
+This website contains a collection of questions that have been previously asked on the CoronaNet Slack channel. Please refer to our [codebook](https://docs.google.com/document/d/1zvNMpwj0onFvUZ_gLl4RRjqS-clbHv3TIX6EOHofsME/edit) for more general information about policy categories and coding.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
